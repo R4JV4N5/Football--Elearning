@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Carousel container styles */
+    .carousel-container {
+      width: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    
+    /* Carousel wrapper styles */
+    .carousel-wrapper {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease;
+    }
+    
+    /* Carousel slide styles */
+    .carousel-slide {
+      flex: 0 0 100%;
+      position: relative;
+    }
+    
+    /* Image styles */
+    .carousel-slide img {
+      width: 100%;
+    }
+    
+    /* Title styles */
+    .carousel-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    /* Navigation styles */
+    .carousel-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+    .carousel-nav button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin: 0 5px;
+      padding: 5px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="carousel-slide">
+        <img src="/Football_elearning/images/training2" alt="Image 1">
+        <div class="carousel-title">Title 1</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="/Football_elearning/images/training2" alt="Image 2">
+        <div class="carousel-title">Title 2</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="/Football_elearning/images/training2" alt="Image 3">
+        <div class="carousel-title">Title 3</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="/Football_elearning/images/training2" alt="Image 4">
+        <div class="carousel-title">Title 4</div>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <button class="prev-button">&#8249;</button>
+      <button class="next-button">&#8250;</button>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for carousel navigation
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var carouselWrapper = document.querySelector('.carousel-wrapper');
+      var prevButton = document.querySelector('.prev-button');
+      var nextButton = document.querySelector('.next-button');
+      var slideWidth = document.querySelector('.carousel-slide').offsetWidth;
+      var currentSlide = 0;
+
+      prevButton.addEventListener('click', function() {
+        if (currentSlide > 0) {
+          currentSlide--;
+          carouselWrapper.style.transform = 'translateX(-' + currentSlide * slideWidth + 'px)';
+        }
+      });
+
+      nextButton.addEventListener('click', function() {
+        if (currentSlide < carouselWrapper.children.length - 1) {
+          currentSlide++;
+          carouselWrapper.style.transform = 'translateX(-' + currentSlide * slideWidth + 'px)';
+        }
+      });
+    });
+  </script>
+</body>
