@@ -1,111 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contact Form</title>
-</head>
-<style>
-	*{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-	.container{
-		background-image: url('../images/contact-bg.jpg');
-		height: 100vh;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.card{
-		padding: 2rem;
-		text-align: center;
-		background-color: #39459b;
-		height: 600px;
-		width: 700px;
-		box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
-		border: 1rem solid #0d99d7;
-	}
-	.card h1{
-		font-size: 4rem;
-		color: #fff;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-	}
-	.card p{
-		color: #fff;
-		font-size: 1.2rem;
-		margin-top: 1rem;
-		letter-spacing: 2px;
-	}
-	.input-field{
-		margin: 2.5rem;
-		position: relative;
-	}
-	.card input{
-		width: 100%;
-		background-color: transparent;
-		padding: 1rem;
-		border: none;
-		outline: none;
-		border-bottom: 2px solid #0d99d7;
-		color: #fff;
-		font-size: 1rem;
-	}
-	label{
-		text-transform: capitalize;
-		letter-spacing: 2px;
-		position: absolute;
-		top: 10px;
-		left: 0;
-		color: #93d1ec;
-		transition: all 0.3s ease-in-out;
-	}
-	.input-field:last-child .submit{
-		width: 200px;
-		border: 2px solid #fff;
-		color: #fff;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-	}
-	input:focus{
-		border-bottom: 2px solid #fff;
-	}
-	input:focus~label,
-	input:valid~label{
-		transform: translateY(-20px);
-	}
-</style>
-<body>
-	<div class="container">
-		<div class="card">
-			<div class="card-body">
-				<form action="">
-					<h1>contact us</h1>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tenetur vitae .</p>
-					<div class="input-field">
-						<input type="text" required="">
-						<label for="">Your name</label>
-					</div>
-					<div class="input-field">
-						<input type="text" required="">
-						<label for="">Your mail</label>
-					</div>
-					<div class="input-field">
-						<input type="text" required="">
-						<label for="">Your message</label>
-					</div>
-					<div class="input-field">
-						<input type="submit" class="submit" value="submit" required="">
-						
-					</div>
-					
-				</form>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="/Football_elearning/css/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main Title Icon -->
+    <link
+      rel="icon"
+      type="image/gif/png"
+      href="./images/Main Tab Image-Logo.png"
+    />
+    <title>Responsive Login Slider</title>
+  </head>
+
+  <body>
+	<nav>
+		<div class="navbar">
+		  <p class="logo">Footstart Elearn</p>
+		  <div class="nav-links">
+			<a href="/index.html">Home</a>
+			<a href="/game_hist.html">Game-history</a>
+			<a href="/skills.html">Skills</a>
+			<a href="/Training.html">Training</a>
+			<a href="/contact.html">Contact</a>
+			<a href="/login.html">Login</a>
+		  </div>
 		</div>
-	</div>
-</body>
+	  </nav>
+
+
+    <div class="containter">
+      <div class="bluebg">
+        <div class="box signin">
+          <!-- Sign In Button -->
+          <h2>Already Have an Account?</h2>
+          <button class="signinbtn">Sign In</button>
+        </div>
+        <div class="box signup">
+          <!-- Sign Up Button -->
+          <h2>Don't Have an Account?</h2>
+          <button class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+      <div class="formBx">
+        <!------------ Slider ------------->
+        <div class="form signinForm">
+          <!-- Sign In Form -->
+          <form action="/index.html">
+            <i class="bx bx-log-in signinimage"></i>
+            <h3>Sign In</h3>
+            <input type="email" placeholder=" Email" required/>
+            <input type="password" placeholder=" Password" required/>
+            <input type="submit" value="Login" />
+            <a href="#" class="forgot">Forgot Password?</a>
+          </form>
+        </div>
+        <div class="form signupForm">
+          <!-- Sign Up Form -->
+          <form>
+            <i class="bx bxs-user signupimage"></i>
+            <h3>Sign Up</h3>
+            <input type="text" placeholder=" Username" required/>
+            <input type="email" placeholder=" Email Address" required/>
+            <input type="password" placeholder=" Password"required />
+            <input type="password" placeholder=" Confirm Password" required/>
+            <input type="submit" value="Register" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      const signinBtn = document.querySelector(".signinbtn");
+      const signupBtn = document.querySelector(".signupbtn");
+      const formBx = document.querySelector(".formBx");
+      const body = document.querySelector("body");
+
+      signupBtn.onclick = function () {
+        formBx.classList.add("active");
+        body.classList.add("active");
+      };
+
+      signinBtn.onclick = function () {
+        formBx.classList.remove("active");
+        body.classList.remove("active");
+      };
+    </script>
+
+
+
+
+
+
+  </body>
 </html>
