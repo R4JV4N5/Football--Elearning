@@ -1,121 +1,204 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 10px;
-      text-align: center;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training - Football:Elearning</title>
+    <link rel="stylesheet" href="/Football_elearning/css/training.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <p class="logo">Footstart Elearn</p>
+        <div class="nav-links">
+          <a href="/index.html">Home</a>
+          <a href="/game_hist.html">Game-history</a>
+          <a href="/skills.html">Skills</a>
+          <a href="/Training.html">Training</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="title_container">
+      <div class="title_text">
+        <h1>Training and Fitness</h1>
+        <hr width="40%" />
+        <p>
+          Training and fitness are crucial elements in football as they directly
+          impact the performance and success of both individual players and
+          teams. Football is a physically demanding sport that requires players
+          to possess optimal levels of strength, speed, endurance, and agility.
+          Through systematic training programs, players can enhance their
+          physical conditioning, enabling them to perform at their best on the
+          field. Improved conditioning allows players to run faster, react
+          quicker, and maintain their energy levels throughout the game.
+        </p>
+      </div>
+    </div>
+    <div class="Training_container">
+      <table>
+        <tr>
+          <td style="width: 40%">
+            <div class="train_img">
+              <img
+                src="https://contents.mediadecathlon.com/p1726392/k$06aeb56886b91a4580621cae0d8352b8/1800x0/3360pt2240/6720xcr3423/default.jpg?format=auto"
+                alt=""
+              />
+            </div>
+          </td>
+          <td style="width: 60%">
+            <div class="Train_text">
+              <h1>Why is Training and fitness important?</h1>
+              <hr width="50%" style="float: left" />
+              <br />
+              <p>
+                <strong> Physical conditioning:</strong> Training and fitness
+                programs improve players' strength, speed, endurance, and
+                agility, enabling them to perform optimally on the field.
+              </p>
+              <p>
+                <strong> Enhanced performance:</strong> Improved conditioning
+                allows players to run faster, react quicker, and maintain energy
+                levels throughout the game, ultimately improving their overall
+                performance.
+              </p>
+              <p>
+                <strong>Muscular strength:</strong> Training helps develop
+                muscular strength, which is crucial for winning battles on the
+                field, such as winning headers, holding off opponents, or making
+                powerful shots.
+              </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
     
-    .card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
+    <div class="tips">
+      <h1>Tips for Training</h1>
+    <hr width="40%" >
+      <div class="image-container">
+        <div class="image-card">
+          <img src="/Football_elearning/images/training/speed_.jpg" alt="Image 1">
+          <div class="image-info">
+            <h1>Speed</h1>
+            <p>Speed is essential because it allows players to cover ground quickly, outrun opponents, and create goal-scoring opportunities. Players with good speed can make explosive runs, beat defenders, and create space for themselves or their teammates. Additionally, speed enables defenders to track back and prevent counterattacks effectively.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="/Football_elearning/images/training/agility.jpg" alt="Image 2">
+          <div class="image-info">
+            <h1>Agility</h1>
+            <p>Agility is another critical attribute in football. It refers to a player's ability to change direction quickly, maintain balance, and evade opponents. Agile players can navigate through tight spaces, dribble past defenders, and execute quick turns and twists to create scoring chances. Agile defenders can close down opponents efficiently and intercept passes effectively.</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="/Football_elearning/images/training/endurance.jpg" alt="Image 3">
+          <div class="image-info">
+            <h1>Endurance</h1>
+            <p>Endurance is vital for football players as matches can be physically demanding and last for 90 minutes or more. Players with high levels of endurance can sustain their performance throughout the game, maintain their speed and agility, and avoid fatigue. This enables them to make consistent contributions to their team's success and play an active role in both offensive and defensive situations.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+   div.
     
-    .card h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: #333;
-    }
-    
-    .card p {
-      font-size: 18px;
-      line-height: 1.5;
-      color: #555;
-    }
-    
-    .card a {
-      display: inline-block;
-      padding: 8px 16px;
-      background-color: #333;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s;
-    }
-    
-    .card a:hover {
-      background-color: #555;
-    }
-    
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      margin-top: 20px;
-    }
-    
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="grid">
-    <div class="card">
-      <img src="image1.jpg" alt="Image 1">
-      <h2>Title 1</h2>
-      <p>Description of card 1.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
-      <h2>Title 2</h2>
-      <p>Description of card 2.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
-      <h2>Title 2</h2>
-      <p>Description of card 2.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
-      <h2>Title 2</h2>
-      <p>Description of card 2.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
-      <h2>Title 2</h2>
-      <p>Description of card 2.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
-      <h2>Title 2</h2>
-      <p>Description of card 2.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
-      <h2>Title 2</h2>
-      <p>Description of card 2.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
-      <h2>Title 2</h2>
-      <p>Description of card 2.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
-      <h2>Title 2</h2>
-      <p>Description of card 2.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <!-- Add more cards here -->
-  </div>
-</body>
+     <div class="exercise_container">
+      <div class="exercise_title">
+        <h1>Exercises</h1>
+        <hr width="40%" style="float: left" />
+        <br />
+        <p>
+          Exercise plays a vital role in the world of football, contributing to
+          the physical fitness and performance of players at all levels.
+          Football demands a high level of physical capabilities, including
+          strength, speed, endurance, and agility. Regular exercise helps
+          football players develop and maintain these essential attributes.
+        </p>
+
+        <div class="exercise_contents">
+          <div class="exercise">
+            <h1>Squats</h1>
+            <hr style="width: 40%; float: left" /><br>
+            <p>Push your hips back and go down while extending your hands in
+              front. Push your chest out and keep your back straight. It is
+              important to ensure that your knees do not cross the toes. Now
+              return to the starting position. Whether it is a weighted or a
+              non-weighted squat, you must get into the habit of engaging the</p>
+            <div class="video_box">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/NmsP310NPCE"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+
+            </div>
+
+          </div>
+          <div class="exercise">
+            <h1>Tuck Jumps</h1>
+            <hr style="width: 40%; float: left" /><br>
+            <p> Stand with your feet slightly apart, a little less than the width
+              of the shoulders. Go down to a quarter squat position while
+              keeping your back straight and then burst into an upward jump
+              while folding your knees toward your chest. Land softly and return
+              to the starting position.</p>
+            <div class="video_box">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/r7oBejx1PHM"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+
+            </div>
+
+          </div>
+          <div class="exercise">
+            <h1>Glute Bridge</h1>
+            <hr style="width: 40%; float: left" /><br>
+            <p>Lie down on your back with your knees bent. Keep your hands by
+              your side, make sure your ankles are exactly under your knees and
+              the heels close to your butt. Then raise your hips as high as
+              possible. While going up, ensure that you exhale and consciously
+              contract the abdominal muscles. In particular this exercise works
+              on the glutes but also impacts the hamstring, quads and calves.</p>
+            <div class="video_box">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/OUgsJ8-Vi0E"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>  
+    <footer class="footer-container">
+      <p>&copy; 2023 Football E-Learning. All rights reserved. |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Privacy Policy</a>
+      </p>
+      <div class="footer-attribution">
+        Designed and developed by Your Name |
+        Follow us on:
+        <a href="#" class="social-icon"><img src="/Football_elearning/images/homepage/_facbook_icon.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="/Football_elearning/images/homepage/twittericon.png" alt="Twitter"></a>
+        <a href="#" class="social-icon"><img src="/Football_elearning/images/homepage/instagram_icon.png" alt="Instagram"></a>
+      </div>
+    </footer>
+  </body>
 </html>

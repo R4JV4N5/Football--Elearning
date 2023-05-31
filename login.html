@@ -1,110 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    /* Carousel container styles */
-    .carousel-container {
-      width: 400px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-    
-    /* Carousel wrapper styles */
-    .carousel-wrapper {
-      display: flex;
-      width: 100%;
-      transition: transform 0.5s ease;
-    }
-    
-    /* Carousel slide styles */
-    .carousel-slide {
-      flex: 0 0 100%;
-      position: relative;
-    }
-    
-    /* Image styles */
-    .carousel-slide img {
-      width: 100%;
-    }
-    
-    /* Title styles */
-    .carousel-title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      padding: 10px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    
-    /* Navigation styles */
-    .carousel-nav {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    
-    .carousel-nav button {
-      background: none;
-      border: none;
-      cursor: pointer;
-      margin: 0 5px;
-      padding: 5px;
-      font-size: 24px;
-    }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Form</title>
 </head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.container{
+		background-image: url('../images/contact-bg.jpg');
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.card{
+		padding: 2rem;
+		text-align: center;
+		background-color: #39459b;
+		height: 600px;
+		width: 700px;
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
+		border: 1rem solid #0d99d7;
+	}
+	.card h1{
+		font-size: 4rem;
+		color: #fff;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	.card p{
+		color: #fff;
+		font-size: 1.2rem;
+		margin-top: 1rem;
+		letter-spacing: 2px;
+	}
+	.input-field{
+		margin: 2.5rem;
+		position: relative;
+	}
+	.card input{
+		width: 100%;
+		background-color: transparent;
+		padding: 1rem;
+		border: none;
+		outline: none;
+		border-bottom: 2px solid #0d99d7;
+		color: #fff;
+		font-size: 1rem;
+	}
+	label{
+		text-transform: capitalize;
+		letter-spacing: 2px;
+		position: absolute;
+		top: 10px;
+		left: 0;
+		color: #93d1ec;
+		transition: all 0.3s ease-in-out;
+	}
+	.input-field:last-child .submit{
+		width: 200px;
+		border: 2px solid #fff;
+		color: #fff;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	input:focus{
+		border-bottom: 2px solid #fff;
+	}
+	input:focus~label,
+	input:valid~label{
+		transform: translateY(-20px);
+	}
+</style>
 <body>
-  <div class="carousel-container">
-    <div class="carousel-wrapper">
-      <div class="carousel-slide">
-        <img src="/Football_elearning/images/training2" alt="Image 1">
-        <div class="carousel-title">Title 1</div>
-      </div>
-      <div class="carousel-slide">
-        <img src="/Football_elearning/images/training2" alt="Image 2">
-        <div class="carousel-title">Title 2</div>
-      </div>
-      <div class="carousel-slide">
-        <img src="/Football_elearning/images/training2" alt="Image 3">
-        <div class="carousel-title">Title 3</div>
-      </div>
-      <div class="carousel-slide">
-        <img src="/Football_elearning/images/training2" alt="Image 4">
-        <div class="carousel-title">Title 4</div>
-      </div>
-    </div>
-    <div class="carousel-nav">
-      <button class="prev-button">&#8249;</button>
-      <button class="next-button">&#8250;</button>
-    </div>
-  </div>
-
-  <script>
-    // JavaScript for carousel navigation
-    document.addEventListener("DOMContentLoaded", function(event) {
-      var carouselWrapper = document.querySelector('.carousel-wrapper');
-      var prevButton = document.querySelector('.prev-button');
-      var nextButton = document.querySelector('.next-button');
-      var slideWidth = document.querySelector('.carousel-slide').offsetWidth;
-      var currentSlide = 0;
-
-      prevButton.addEventListener('click', function() {
-        if (currentSlide > 0) {
-          currentSlide--;
-          carouselWrapper.style.transform = 'translateX(-' + currentSlide * slideWidth + 'px)';
-        }
-      });
-
-      nextButton.addEventListener('click', function() {
-        if (currentSlide < carouselWrapper.children.length - 1) {
-          currentSlide++;
-          carouselWrapper.style.transform = 'translateX(-' + currentSlide * slideWidth + 'px)';
-        }
-      });
-    });
-  </script>
+	<div class="container">
+		<div class="card">
+			<div class="card-body">
+				<form action="">
+					<h1>contact us</h1>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tenetur vitae .</p>
+					<div class="input-field">
+						<input type="text" required="">
+						<label for="">Your name</label>
+					</div>
+					<div class="input-field">
+						<input type="text" required="">
+						<label for="">Your mail</label>
+					</div>
+					<div class="input-field">
+						<input type="text" required="">
+						<label for="">Your message</label>
+					</div>
+					<div class="input-field">
+						<input type="submit" class="submit" value="submit" required="">
+						
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
+</html>

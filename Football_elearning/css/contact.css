@@ -1,0 +1,229 @@
+h1,
+h2,
+p {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* navbar */
+
+/* Style for the navbar */
+.navbar {
+  background-color: #000000a6;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Style for the logo */
+.navbar .logo {
+  color: white;
+  padding-left: 4rem;
+  float: left;
+  font-size: 2em;
+  margin: 10px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* Style for the anchor tags */
+.navbar .nav-links {
+  padding-right: 4rem;
+  float: right;
+  margin: 10px;
+}
+
+/* Style for the anchor tag links */
+.navbar .nav-links a {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* Style for the anchor tag links on hover */
+.navbar .nav-links a:hover {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  color: red;
+}
+
+/* title */
+.title_container {
+  background-image: url("https://cloudfront-us-east-2.images.arcpublishing.com/reuters/FR25RC7GHJJHJBK4J376JLX2HY.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title_text {
+  background-color: rgba(0, 0, 0, 0.54);
+  padding: 5rem;
+  text-align: center;
+  color: white;
+  padding: 18rem 18rem 18rem 18rem;
+}
+.title_text h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+  font-family: "Viga", sans-serif;
+  padding-bottom: 1rem;
+}
+.title_text p {
+  font-size: 1.2rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* contact info */
+.contact_info {
+  padding: 0rem 9rem 0rem 9rem;
+}
+.contact_info h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: "Viga", sans-serif;
+  padding-bottom: 1rem;
+}
+
+.contact_info p {
+  font-size: 1.2rem;
+  font-family: "Rajdhani", sans-serif;
+}
+/*contact Form */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  background: white;
+  font-size: 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.formbold-input-flex {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+.formbold-input-flex > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.formbold-textarea {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #dde3ec;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  color: #07074d;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input::placeholder {
+  color: #536387;
+}
+.formbold-form-input:focus {
+  border-color: #ffffff;
+}
+.formbold-form-label {
+  color: #07074d;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 18px;
+}
+.formbold-form-input:focus + .formbold-form-label {
+  color: #000000;
+}
+
+.formbold-input-file {
+  margin-top: 30px;
+}
+.formbold-input-file input[type="file"] {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  z-index: -1;
+}
+.formbold-btn {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 12px 25px;
+  border: none;
+  font-weight: 500;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* footer */
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Footer link styles */
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Footer link hover styles */
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+/* Footer separator styles */
+.footer-container::before,
+.footer-container::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  width: 50%;
+  margin: 10px auto;
+}
+
+/* Footer attribution styles */
+.footer-attribution {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.footer-attribution a img {
+  height: 3rem;
+}

@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for the navbar */
+.navbar {
+  background-color: #000000a6;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Style for the logo */
+.navbar .logo {
+  color: white;
+  padding-left: 4rem;
+  float: left;
+  font-size: 2em;
+  margin: 10px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* Style for the anchor tags */
+.navbar .nav-links {
+  padding-right: 4rem;
+  float: right;
+  margin: 10px;
+}
+
+/* Style for the anchor tag links */
+.navbar .nav-links a {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* Style for the anchor tag links on hover */
+.navbar .nav-links a:hover {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  color: red;
+}
+
+/* title container */
+.title_container {
+background-image: url('https://contents.mediadecathlon.com/p1793862/k$895b41b5f0bc6adadc415e9f9aa4f68a/1920x0/2736pt1925/5472xcr3420/default.jpg?format=auto');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.title_text{
+    background-color: rgba(0, 0, 0, 0.54);
+    padding: 5rem;
+    text-align: center;
+    color: white;
+    padding:18rem 18rem 18rem 18rem;
+    
+}
+.title_text h1{
+    font-size: 4rem;
+    font-weight: lighter;
+    font-family: 'Viga', sans-serif;
+    padding-bottom: 1rem;
+}
+.title_text p{
+    font-size: 1.2rem;
+    font-family: "Rajdhani", sans-serif;
+}
+
+/* Why training is important */
+
+/* training */
+.Training_container {
+    background-color: rgb(0, 0, 0);
+    height: fit-content;
+  }
+  .train_img img {
+    width: 45rem;
+  }
+  .Train_text {
+    padding: 3rem 10rem 3rem 1rem;
+    color: white;
+  }
+  .Train_text h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+   font-family: 'Viga', sans-serif;
+  }
+  .Train_text p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .Train_text a {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+  
+  .Train_text a:hover {
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+  }
+  
+  .container_1{
+    background-color: black;
+  }
+
+  /* Exercise boxes */
+
+  .exercise_container{
+    margin: 0rem 25rem 0rem 25rem;
+  }
+  .exercise_title{
+    text-align: left;
+  }
+  .exercise_title h1{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+   font-family: 'Viga', sans-serif;
+
+  }
+  .exercise_title p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+
+/* exercise content */
+.exercise{
+  padding: 1rem;
+}
+.exercise h1{
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+ font-family: 'Viga', sans-serif;
+}
+
+
+
+
+  /* exercises card */
+  .card {
+    float: left;
+    /* border: 1px solid #ccc; */
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 50rem;
+    margin-top: 1rem ;
+  }
+  
+  .title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+   font-family: 'Viga', sans-serif;
+
+
+  }
+  
+  .description {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+  
+  .video-box {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      max-width: 100%;
+      margin: 0 10px;
+    }
+  }
+  /* tips */
+  .tips{
+    text-align: center;
+
+  }
+  .tips h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+   font-family: 'Viga', sans-serif;
+  }
+  .image-container {
+   
+    display: flex;
+  }
+  
+  .image-card {
+    position: relative;
+    flex: 1;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .image-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-card:hover .image-info {
+    opacity: 1;
+  }
+  
+  .image-info p {
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: "Rajdhani", sans-serif;
+  }
+  
+
+  /* footer */
+  /* footer */
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Footer link styles */
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Footer link hover styles */
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+/* Footer separator styles */
+.footer-container::before,
+.footer-container::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  width: 50%;
+  margin: 10px auto;
+}
+
+/* Footer attribution styles */
+.footer-attribution {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.footer-attribution a img{
+  height: 3rem;
+}
