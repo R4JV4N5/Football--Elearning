@@ -109,9 +109,11 @@
                       </div>
                       <div>
                         <input
-                          type="text"
+                          type="number"
                           name="phone"
                           id="phone"
+                          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                          maxlength="10"
                           placeholder="(319) 555-0115"
                           class="formbold-form-input"
                           required
@@ -135,7 +137,9 @@
                         Message
                       </label>
                     </div>
-                    <button type="submit" class="formbold-btn">Send Message</button>
+                    <button type="submit" class="formbold-btn">
+                      Send Message
+                    </button>
                   </form>
                 </div>
               </div>
@@ -144,10 +148,9 @@
         </tr>
       </table>
     </div>
-<script src="/Football_elearning/js/contact.js"></script>
-    
+    <script src="/Football_elearning/js/contact.js"></script>
 
-<footer class="footer-container">
+    <footer class="footer-container">
       <p>
         &copy; 2023 Football E-Learning. All rights reserved. |
         <a href="#">Terms of Service</a> |

@@ -47,7 +47,7 @@ body{
   
   /* Style for the logo */
   .navbar .logo {
-    color: white;
+    color:yellow;
     padding-left: 4rem;
     float: left;
     font-size: 2em;

@@ -6,7 +6,7 @@ h1,
 h2,
 p {
   margin: 0;
-  padding-bottom: 1rem;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -24,7 +24,7 @@ html {
 
 /* Style for the logo */
 .navbar .logo {
-  color: white;
+  color:yellow;
   padding-left: 4rem;
   float: left;
   font-size: 2em;

@@ -25,9 +25,10 @@ html {
 
 /* Style for the logo */
 .navbar .logo {
-  color: white;
+  color:yellow;
   padding-left: 4rem;
   float: left;
+  font-weight: 300;
   font-size: 2em;
   margin: 10px;
   font-family: "Rajdhani", sans-serif;
