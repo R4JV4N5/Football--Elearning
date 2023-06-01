@@ -63,7 +63,31 @@ html {
 background-image: url('https://res.cloudinary.com/southampton//image/upload/f_auto,w_1650,h_660,c_fill,g_auto,q_90/AY5I7611_38e9e6dd-8dae-488e-aa33-32b46e2f0e65_ws9onz.jpg');
 background-repeat: no-repeat;
 background-size: cover;
+animation: change 10s infinite ease-in-out ;
 }
+
+@keyframes change{
+  0%{
+    background-image:url('https://res.cloudinary.com/southampton//image/upload/f_auto,w_1650,h_660,c_fill,g_auto,q_90/AY5I7611_38e9e6dd-8dae-488e-aa33-32b46e2f0e65_ws9onz.jpg');
+  }
+  25%{
+    background-image:url('/Football_elearning/images/homepage/bg3');
+    
+  }
+  50%{
+    background-image:url('/Football_elearning/images/homepage/bg4');
+    
+  }
+  75%{
+    background-image:url('/Football_elearning/images/homepage/bg1');
+    
+  }
+  100%{
+    background-image:url('/Football_elearning/images/homepage/bg1');
+
+  }
+}
+
 .title_text{
     background-color: rgba(0, 0, 0, 0.54);
     padding: 5rem;
