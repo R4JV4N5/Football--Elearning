@@ -78,6 +78,13 @@ html {
   font-size: 1.2rem;
   font-family: "Rajdhani", sans-serif;
 }
+/* contact_table */
+
+.contact_table table tr td{
+  width:50%;
+
+}
+
 
 /* contact info */
 .contact_info {

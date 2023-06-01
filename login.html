@@ -21,20 +21,19 @@
   </head>
 
   <body>
-	<nav>
-		<div class="navbar">
-		  <p class="logo">Footstart Elearn</p>
-		  <div class="nav-links">
-			<a href="/index.html">Home</a>
-			<a href="/game_hist.html">Game-history</a>
-			<a href="/skills.html">Skills</a>
-			<a href="/Training.html">Training</a>
-			<a href="/contact.html">Contact</a>
-			<a href="/login.html">Login</a>
-		  </div>
-		</div>
-	  </nav>
-
+    <nav>
+      <div class="navbar">
+        <p class="logo">Footstart Elearn</p>
+        <div class="nav-links">
+          <a href="/index.html">Home</a>
+          <a href="/game_hist.html">Game-history</a>
+          <a href="/skills.html">Skills</a>
+          <a href="/Training.html">Training</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/login.html">Login</a>
+        </div>
+      </div>
+    </nav>
 
     <div class="containter">
       <div class="bluebg">
@@ -56,8 +55,8 @@
           <form action="/index.html">
             <i class="bx bx-log-in signinimage"></i>
             <h3>Sign In</h3>
-            <input type="email" placeholder=" Email" required/>
-            <input type="password" placeholder=" Password" required/>
+            <input type="email" placeholder=" Email" required />
+            <input type="password" placeholder=" Password" required />
             <input type="submit" value="Login" />
             <a href="#" class="forgot">Forgot Password?</a>
           </form>
@@ -67,36 +66,15 @@
           <form>
             <i class="bx bxs-user signupimage"></i>
             <h3>Sign Up</h3>
-            <input type="text" placeholder=" Username" required/>
-            <input type="email" placeholder=" Email Address" required/>
-            <input type="password" placeholder=" Password"required />
-            <input type="password" placeholder=" Confirm Password" required/>
+            <input type="text" placeholder=" Username" required />
+            <input type="email" placeholder=" Email Address" required />
+            <input type="password" placeholder=" Password" required />
+            <input type="password" placeholder=" Confirm Password" required />
             <input type="submit" value="Register" />
           </form>
         </div>
       </div>
     </div>
-    <script>
-      const signinBtn = document.querySelector(".signinbtn");
-      const signupBtn = document.querySelector(".signupbtn");
-      const formBx = document.querySelector(".formBx");
-      const body = document.querySelector("body");
-
-      signupBtn.onclick = function () {
-        formBx.classList.add("active");
-        body.classList.add("active");
-      };
-
-      signinBtn.onclick = function () {
-        formBx.classList.remove("active");
-        body.classList.remove("active");
-      };
-    </script>
-
-
-
-
-
-
+    <script src="/Football_elearning/js/login.js"></script>
   </body>
 </html>

@@ -72,7 +72,7 @@ html {
 }
 
 .inner_container h1 {
- font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
   font-size: 4rem;
   color: white;
   font-weight: 700;
@@ -83,13 +83,13 @@ html {
   font-size: 3rem;
   letter-spacing: 2px;
   font-weight: 400;
- font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
 }
 .inner_container p {
   font-size: 1rem;
   color: white;
   font-size: 2rem;
- font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
 }
 
 .inner_container a {
@@ -137,15 +137,17 @@ html {
   background-color: red;
   color: white;
 }
-.texts{
+.texts {
   padding: 0rem 14rem 0rem 14rem;
 }
-
+.texts hr{
+  width: 80%
+}
 .texts h1 {
   font-size: 3rem;
   letter-spacing: 2px;
   font-weight: 400;
- font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
 }
 .texts p {
   font-weight: 400;
@@ -190,14 +192,14 @@ html {
   font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 400;
- font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
 }
 
 .card-content p {
   font-size: 1.5rem;
   letter-spacing: 2px;
   font-weight: 300;
- font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
 }
 
 .card:hover {
@@ -218,17 +220,25 @@ html {
   background-color: white;
   height: fit-content;
 }
+.Train_text_td {
+  width: 60%;
+}
+
 .train_img img {
   width: 50rem;
 }
 .Train_text {
   padding: 7rem 10rem 7rem 0rem;
 }
+.Train_text hr {
+  width: 50%;
+  float: left;
+}
 .Train_text h1 {
   font-size: 4rem;
   letter-spacing: 2px;
   font-weight: 700;
- font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
 }
 .Train_text p {
   font-weight: 400;
@@ -253,35 +263,31 @@ html {
   border-radius: 1rem;
 }
 
-
-
 /* resources container */
 .resources_container {
   background-color: black;
   height: fit-content;
 }
-.resource_inner_box{
+.resource_inner_box {
   padding: 2rem;
 }
-.resource_texts{
+.resource_texts {
   color: white;
   text-align: right;
 }
-.resource_texts h1{
+.resource_texts h1 {
   font-size: 4rem;
   letter-spacing: 2px;
   font-weight: 700;
- font-family: 'Viga', sans-serif;
-
+  font-family: "Viga", sans-serif;
 }
-.resource_texts p{
+.resource_texts p {
   font-weight: 400;
   font-size: 1.5rem;
   font-family: "Rajdhani", sans-serif;
-
 }
 
-.resource_texts a{
+.resource_texts a {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   text-align: center;
@@ -298,32 +304,30 @@ html {
   border-radius: 1rem;
 }
 
+/* Carousel container styles */
+/* Carousel container styles */
+.carousel-container {
+  width: 40rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+/* Carousel wrapper styles */
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
 
- /* Carousel container styles */
-    /* Carousel container styles */
-    .carousel-container {
-      width: 40rem;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-    
-    /* Carousel wrapper styles */
-    .carousel-wrapper {
-      display: flex;
-      width: 100%;
-      transition: transform 0.5s ease;
-    }
-    
-    /* Carousel slide styles */
-    .carousel-slide {
-      flex: 0 0 40rem;
-    }
-    
-    /* Image styles */
-    .carousel-slide img {
-      width: 100%;
-    }
+/* Carousel slide styles */
+.carousel-slide {
+  flex: 0 0 40rem;
+}
+
+/* Image styles */
+.carousel-slide img {
+  width: 100%;
+}
 /* footer */
 .footer-container {
   background-color: #333;
@@ -361,6 +365,6 @@ html {
   margin-top: 10px;
   font-size: 12px;
 }
-.footer-attribution a img{
+.footer-attribution a img {
   height: 3rem;
 }

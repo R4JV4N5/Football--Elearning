@@ -1,0 +1,350 @@
+body{
+    margin: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for the navbar */
+.navbar {
+  background-color: #000000a6;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Style for the logo */
+.navbar .logo {
+  color: white;
+  padding-left: 4rem;
+  float: left;
+  font-size: 2em;
+  margin: 10px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* Style for the anchor tags */
+.navbar .nav-links {
+  padding-right: 4rem;
+  float: right;
+  margin: 10px;
+}
+
+/* Style for the anchor tag links */
+.navbar .nav-links a {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* Style for the anchor tag links on hover */
+.navbar .nav-links a:hover {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  color: red;
+}
+
+/* title container */
+.title_container {
+background-image: url('https://res.cloudinary.com/southampton//image/upload/f_auto,w_1650,h_660,c_fill,g_auto,q_90/AY5I7611_38e9e6dd-8dae-488e-aa33-32b46e2f0e65_ws9onz.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.title_text{
+    background-color: rgba(0, 0, 0, 0.54);
+    padding: 5rem;
+    text-align: center;
+    color: white;
+    padding:18rem 18rem 18rem 18rem;
+    
+}
+.title_text h1{
+    font-size: 4rem;
+    font-weight: lighter;
+    font-family: 'Viga', sans-serif;
+    padding-bottom: 1rem;
+}
+.title_text p{
+    font-size: 1.2rem;
+    font-family: "Rajdhani", sans-serif;
+}
+
+
+/* Training box */
+
+.football_container {
+    background-color: white;
+    height: fit-content;
+  }
+  .Train_text_td {
+    width: 60%;
+  }
+  
+  .football_img img {
+    width: 45rem;
+  }
+  .Train_text {
+    padding: 7rem 10rem 7rem 0rem;
+  }
+  .Train_text hr {
+    width: 50%;
+    float: left;
+  }
+  .Train_text h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Viga", sans-serif;
+  }
+  .Train_text p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .Train_text a {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+  
+  .Train_text a:hover {
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+  }
+  
+
+  .resources_container {
+    background-color: black;
+    height: fit-content;
+  }
+  .resource_inner_box {
+    padding: 2rem;
+  }
+  .resource_texts {
+    color: white;
+    text-align: right;
+  }
+  .resource_texts h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Viga", sans-serif;
+  }
+  .resource_texts p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+  
+  .resource_texts a {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .resource_texts a:hover {
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+  }
+  
+  /* Carousel container styles */
+  /* Carousel container styles */
+  .carousel-container {
+    width: 40rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Carousel wrapper styles */
+  .carousel-wrapper {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Carousel slide styles */
+  .carousel-slide {
+    flex: 0 0 40rem;
+  }
+  
+  /* Image styles */
+  .carousel-slide img {
+    width: 100%;
+  }
+
+
+/* footballers name */
+
+.skills_container {
+    background-color: white;
+    text-align: center;
+    color: black;
+    height: fit-content;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .inner_skill_box a {
+    margin-top: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* padding: 0rem 1rem 0rem 1rem; */
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .inner_skill_box a:hover {
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+  }
+  .texts {
+    padding: 0rem 14rem 0rem 14rem;
+  }
+  .texts hr{
+    width: 80%
+  }
+  .texts h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: "Viga", sans-serif;
+  }
+  .texts p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: "Rajdhani", sans-serif;
+  }
+  
+  /* card */
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 20rem;
+    height: 18rem;
+    margin: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card-content {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .card-content h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: "Viga", sans-serif;
+  }
+  
+  .card-content p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-family: "Viga", sans-serif;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:hover img {
+    opacity: 0.6;
+  }
+  
+  .card:hover .card-content {
+    opacity: 1;
+  }
+  
+
+
+  /* footer */
+  .footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Footer link styles */
+  .footer-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Footer link hover styles */
+  .footer-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer separator styles */
+  .footer-container::before,
+  .footer-container::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    width: 50%;
+    margin: 10px auto;
+  }
+  
+  /* Footer attribution styles */
+  .footer-attribution {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .footer-attribution a img {
+    height: 3rem;
+  }
+  

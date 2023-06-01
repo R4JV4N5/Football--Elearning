@@ -85,7 +85,7 @@ background-size: cover;
 
 /* skill box */
 .skills_box {
-    padding: 0rem 10rem 0rem 10rem;
+    /* padding: 0rem 10rem 0rem 10rem; */
 }
 /* card grids */
 
@@ -97,6 +97,9 @@ background-size: cover;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .card hr{
+    width: 50%;
   }
   
   .card img {
@@ -195,3 +198,24 @@ background-size: cover;
   .footer-attribution a img{
     height: 3rem;
   }
+
+
+
+
+
+
+  .video-box {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
