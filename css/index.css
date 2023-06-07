@@ -1,8 +1,6 @@
 body {
-  background-repeat: no-repeat;
-  background-size: 100%;
+  
   margin: 0;
-  background-image: url("/Football_elearning/images/homepage/bg1");
 }
 h1,
 h2,
@@ -64,7 +62,9 @@ html {
 /* Introduction */
 .Intro_container {
   text-align: center;
-  /* background-image: url('https://digitalhub.fifa.com/transform/a04d1886-047f-4fb9-a620-57c43af283a4/1444254771?io=transform:fill,height:868,width:1536&quality=100'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://digitalhub.fifa.com/transform/a04d1886-047f-4fb9-a620-57c43af283a4/1444254771?io=transform:fill,height:868,width:1536&quality=100');
 }
 
 .inner_container {

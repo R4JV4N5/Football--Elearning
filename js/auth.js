@@ -16,7 +16,7 @@ window.onload = function() {
 
 const logoutUser = ()=>{
     localStorage.removeItem('loggedIn');
-    location.href = '/index.html'
+    location.href = 'index.html'
     alert("Logout Sucessful")
     // var loginLink = document.getElementById('login-link');
     

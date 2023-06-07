@@ -19,7 +19,7 @@ const loginUser = (e) =>{
   const password = e.target.password.value;
   if(email==='admin' &&password==="admin"){
     localStorage.setItem('loggedIn', true)
-    location.href = '/index.html'
+    location.href = 'index.html'
     alert("Login Successful !")
     return
   }

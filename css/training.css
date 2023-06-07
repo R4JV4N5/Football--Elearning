@@ -72,19 +72,19 @@ animation: change 10s infinite ease-in-out;
     background-image:url('https://contents.mediadecathlon.com/p1793862/k$895b41b5f0bc6adadc415e9f9aa4f68a/1920x0/2736pt1925/5472xcr3420/default.jpg?format=auto');
   }
   25%{
-    background-image:url('/Football_elearning/images/homepage/bg4');
+    background-image:url('https://i.guim.co.uk/img/media/cd6efbd1bade44704b0b4f1d7a2b72e3a635a823/0_247_5568_3341/master/5568.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=1dc4191028d3f1147475a2ea0acc8d6a');
     
   }
   50%{
-    background-image:url('/Football_elearning/images/homepage/bg3');
+    background-image:url('https://media.gq-magazine.co.uk/photos/5d13a4d5003d756ecdae71db/master/pass/lionel-messi-gq-14feb18_getty_b.jpg');
     
   }
   75%{
-    background-image:url('/Football_elearning/images/homepage/bg2');
+    background-image:url('https://image.cnbcfm.com/api/v1/image/106869987-1618795805885-gettyimages-1312630032-sb3_5306_2021041510407047.jpeg?v=1618795885');
     
   }
   100%{
-    background-image:url('/Football_elearning/images/homepage/bg1');
+    background-image:url('https://d1e00ek4ebabms.cloudfront.net/production/8d90be5f-3fa6-450d-99ad-b71459b326ac.jpg');
 
   }
 }

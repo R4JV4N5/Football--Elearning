@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltfdae44a2e136b93a/630cdb07982f3c4a2d406258/Mbappe_Neymar.jpg?auto=webp&format=pjpg&width=3840&quality=60");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #000000a6;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Style for the logo */
+.navbar .logo {
+  color: yellow;
+  padding-left: 4rem;
+  float: left;
+  font-size: 2em;
+  margin: 10px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* Style for the anchor tags */
+.navbar .nav-links {
+  padding-right: 4rem;
+  float: right;
+  margin: 10px;
+}
+
+/* Style for the anchor tag links */
+.navbar .nav-links a {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* Style for the anchor tag links on hover */
+.navbar .nav-links a:hover {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  color: red;
+}
+
+.containter {
+  position: sticky;
+  width: 60rem;
+  height: 35rem;
+  margin: 10rem 30rem 10rem 30rem;
+}
+
+/* Making the background blue */
+.bluebg {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.469);
+  box-shadow: 0 5px 45px rgb(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+/* Making 2 columns for SIGN IN and SIGN UP */
+.bluebg .box {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Adding style to H2 font */
+.bluebg .box h2 {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* Adding style to BOTH buttons */
+.bluebg .box button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  border-style: none;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: ease-out 0.3s;
+  position: relative;
+  border: 2px solid white;
+}
+
+.bluebg .box button:hover {
+  background: transparent;
+  border: 2px solid white;
+  color: #fff;
+}
+
+/* Adding style to Silder */
+.formBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 45px rgb(0, 0, 0, 0.15);
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.formBx.active {
+  left: 50%;
+}
+
+/* Styling the form for both SIGN IN and SIGN UP */
+.formBx .form {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+  transition: 0.5s;
+}
+
+.formBx .form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formBx .form form i {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-left: 0;
+  padding-left: 0;
+  left: 0;
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.formBx .form form .signinimage {
+  color: #23a6d5;
+}
+
+/* Adding style to the TEXT of form */
+.formBx .form form h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Styling the TEXTBOXES|INPUT BOXES */
+.formBx .form form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.formBx.active .signinForm {
+  left: -100%;
+  transition-delay: 0%;
+}
+
+.formBx .signinForm {
+  transition-delay: 0.2s;
+}
+
+.formBx .form form input[type="submit"] {
+  background: #5bbbdd;
+  border: none;
+  color: white;
+  max-width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+.formBx .form form input[type="submit"]:hover {
+  letter-spacing: 2px;
+}
+
+.formBx .form form .forgot {
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.formBx .form form .forgot:hover {
+  color: #348dad;
+}
+
+/*= SIGN UP SECTION =*/
+
+.formBx .signupForm {
+  left: 100%;
+  transition-delay: 0s;
+}
+
+.formBx.active .signupForm {
+  left: 0%;
+  transition-delay: 0.25s;
+}
+
+.formBx.active .signupForm input[type="submit"] {
+  background: #000000;
+  border: none;
+  color: white;
+  max-width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*ICONS */
+
+img {
+  width: 3.9rem;
+  height: 3.2rem;
+  position: relative;
+  margin-bottom: 0px;
+  left: 0;
+}
+
+.signupimage {
+  margin-bottom: 3px;
+  color: #000000;
+}
