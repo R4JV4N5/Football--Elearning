@@ -1,5 +1,4 @@
-body {
-  
+body { 
   margin: 0;
 }
 h1,
@@ -58,6 +57,47 @@ html {
   border-radius: 1rem;
   color: red;
 }
+@media screen and (min-width: 700px){
+  .navbar .nav-links .icon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar a:not(:last-child)
+   {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar.responsive {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .navbar .logo{
+    text-align: center;
+    padding: 0px;
+  }
+  .navbar .nav-links{
+    padding: 0px;
+  }
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
 
 /* Introduction */
 .Intro_container {
@@ -69,21 +109,22 @@ html {
 
 .inner_container {
   background-color: #00000075;
-  padding: 23rem 15rem 23rem 15rem;
+  /* padding: 23rem 15rem 23rem 15rem; */
+  padding: 180px;
 }
 
 .inner_container h1 {
   font-family: "Viga", sans-serif;
   font-size: 4rem;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 .inner_container h2 {
   color: white;
   font-size: 3rem;
   letter-spacing: 2px;
-  font-weight: 400;
+  font-weight: 350;
   font-family: "Viga", sans-serif;
 }
 .inner_container p {
@@ -110,6 +151,26 @@ html {
   background-color: black;
   border-radius: 1rem;
   color: red;
+}
+
+@media screen and (max-width: 700px){
+  .Intro_container{
+    max-width: 100%;
+    object-fit: unset;
+  }
+  .inner_container{
+    max-width: 100%;
+    padding: 100px;
+  }
+  .Intro_container .inner_container h1{
+    font-size: calc(100% + 2vw);
+    }
+  .Intro_container .inner_container h2{
+      font-size: calc(100% + 1.6vw);
+    }
+  .Intro_container .inner_container p{
+        font-size: calc(100% + 1.3vw);
+    }
 }
 
 /* skills and positions */
@@ -139,7 +200,7 @@ html {
   color: white;
 }
 .texts {
-  padding: 0rem 14rem 0rem 14rem;
+  padding: 15px;
 }
 .texts hr{
   width: 80%
@@ -156,16 +217,32 @@ html {
   font-family: "Rajdhani", sans-serif;
 }
 
+
 /* card */
 .card-container {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 600px){
+  .card-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+  }
+  .card-content{
+    max-width: 89%;
+  }
+}
 
 .card {
   width: 20rem;
   height: 18rem;
-  margin: 2rem;
+  margin: 1.5rem;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -183,23 +260,23 @@ html {
 .card-content {
   position: absolute;
   bottom: 0;
-  padding: 10px;
+  padding: 0px;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 .card-content h2 {
-  font-size: 2rem;
+  font-size: 2.0rem;
   letter-spacing: 2px;
-  font-weight: 400;
+  font-weight: 100;
   font-family: "Viga", sans-serif;
 }
 
 .card-content p {
   font-size: 1.5rem;
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 50;
   font-family: "Viga", sans-serif;
 }
 
@@ -236,13 +313,13 @@ html {
   float: left;
 }
 .Train_text h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 2px;
-  font-weight: 700;
+  font-weight: 50;
   font-family: "Viga", sans-serif;
 }
 .Train_text p {
-  font-weight: 400;
+  font-weight: 20;
   font-size: 1.5rem;
   font-family: "Rajdhani", sans-serif;
 }
@@ -262,6 +339,24 @@ html {
   background-color: red;
   color: white;
   border-radius: 1rem;
+}
+@media screen and (max-width: 1000px){
+  .Training_container .train_img img{
+    object-fit: unset;
+  }
+  tr { display: block; float: left; }
+  th, td { 
+    display: block; 
+  }
+  td{
+    text-align: center;
+  }
+  .Train_text_td{
+    width: 100vw;
+  }
+  .Train_text{
+    padding: 20px;
+  }
 }
 
 /* resources container */
@@ -303,6 +398,60 @@ html {
   background-color: red;
   color: white;
   border-radius: 1rem;
+}
+@media screen and (max-width: 1000px){
+  /* table 
+{
+    table-layout:fixed;
+    width:100%;
+} */
+  .carousel-slide{
+    object-fit: unset;
+  }
+  tr { 
+    display: block; float: left;
+  }
+  th, td { 
+    display: block; 
+  }
+  td{
+    text-align: center;
+    /* padding: 20px; */
+  }
+  .resource_texts{
+    width: 100%;
+    text-align: center;
+  }
+  .Train_text_td{
+    width: 100%;
+    display: table;
+    overflow-x: wrap;
+  }
+}
+@media  screen and (max-width: 720px) {
+  .Train_text_td{
+    width: 87%;
+  }
+  .resource_texts p{
+    font-size: 3.5vw;
+  } 
+}
+@media  screen and (max-width: 680px) {
+  .Train_text_td{
+    width: 87%;
+  }
+  .carousel-container{
+    max-width: 77%;
+  }
+  .resource_texts h1{
+    font-size: 2.8vw;
+  }
+  .resource_texts p{
+    font-size: 2.3vw;
+  } 
+  .carousel-slide {
+    flex: 0 0 80%;
+  }
 }
 
 /* Carousel container styles */
@@ -364,8 +513,27 @@ html {
 /* Footer attribution styles */
 .footer-attribution {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 20px;
 }
 .footer-attribution a img {
-  height: 3rem;
+  height: 4vw;
+}
+@media screen and (max-width: 700px) {
+  .footer-container p{
+    font-size: calc(100%+1.6vw);
+  }
+  .footer-attribution a img{
+    height: 4vw;
+  }
+  .footer-attribution{
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 450px){
+  .footer-attribution{
+    font-size: 3.5vw;
+  }
+  .footer-attribution a img{
+    height: 7vw;
+  }
 }
