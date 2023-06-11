@@ -24,34 +24,37 @@
 
   <body>
     <nav>
-      <div class="navbar">
+      <div class="navbar" id="myTopnav">
         <p class="logo">Footstart Elearn</p>
-        <div class="nav-links">
+        <div class="nav-links" >
           <a href="index.html">Home</a>
           <a href="game_hist.html">Game-history</a>
           <a href="#skill_box">Skills</a>
           <a href="#Training_box">Training</a>
           <a href="#resources_box">Contact </a>
           <a id="login-link" href="login.html">Login</a>
-
+          <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+            <a href="#" class="icon" onclick="myFunction()">&#9776;</a>
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
     </nav>
 
     <div class="Intro_container">
       <div class="inner_container">
-        <div>
+        <!-- <div> -->
           <h1>Dribble with determination, shoot with precision</h1>
-          <h2>Football is your mission !</h2>
+          <h2>Football is your mission!</h2>
           <hr />
           <p>New to the Game? No Worries</p>
           <a href="game_hist.html">Dive In</a>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
 
     <div id="Training_box" class="Training_container">
-      <table>
+      <table class="training-text">
         <tr>
           <td >
             <div class="train_img">
@@ -60,10 +63,10 @@
           </td>
           <td class="Train_text_td">
             <div class="Train_text">
-              <h1>Training and Fitness</h1>
-              <hr />
+              <h1 >Training and Fitness</h1>
+              <!-- <hr /> -->
               <br />
-              <p>
+              <p >
                 Football players need to be physically fit and possess excellent
                 technical and coordination skills. To achieve those goals and do
                 their coaches proud, they need to train all season long to stay
@@ -76,7 +79,9 @@
         </tr>
       </table>
     </div>
+
     <hr />
+
     <div id="skill_box" class="skills_container">
       <div class="inner_skill_box">
         <div class="texts">
@@ -200,7 +205,9 @@
         <a href="#">Privacy Policy</a>
       </p>
       <div class="footer-attribution">
-        Designed and developed by Your Name | Follow us on:
+        Designed and developed by Your Name 
+        <br>
+         Follow us on:
         <a href="https://www.facebook.com/" class="social-icon"><img src=" images/homepage/_facbook_icon.png" alt="Facebook"></a>
         <a href="https://twitter.com/i/flow/login" class="social-icon"><img src=" images/homepage/twittericon.png" alt="Twitter"></a>
         <a href="https://www.instagram.com/" class="social-icon"><img src=" images/homepage/instagram_icon.png" alt="Instagram"></a>
@@ -208,6 +215,16 @@
       </div>
     </footer>
     <script src=" js/auth.js"></script>
-
+    <script>
+      function myFunction() {
+        console.log("making responsive");
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+      </script>
   </body>
 </html>
